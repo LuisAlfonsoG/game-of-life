@@ -1,0 +1,93 @@
+.Square{
+    border: 1px solid #b4b4b4;
+    width: 30px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.Row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.On{
+    color: cadetblue;
+    background-color: cadetblue;
+}
+
+html{
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.5rem;
+}
+ul{ font-size: 1.5rem;}
+
+
+button{
+    background-color: rgb(142, 196, 196);
+    border: 0.5px solid rgb(167, 164, 164);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+button:active{
+    transform: scale(.8);
+}
+
+.nav-bar ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+section{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#exp-button{
+    background-color: white;
+    border: 0.5px solid rgb(167,167,168);
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#exp-button:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+.wikilink{
+    color:rgb(142, 196, 196)
+}

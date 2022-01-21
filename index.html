@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game of life</title>
+</head>
+<body>
+    
+    <h1>Conway's Game of Life</h1>
+    <button id="Play">Play</button>
+    <button id="random-button">Generate Random Grid</button>
+    <button id='exp-button' onclick="location.href='#info'">Explanation</button>
+    <div id="grid"></div>
+
+    <hr>
+    <section>
+        <h2 id="info">Game Explanation</h2>
+        <p>The Game Of Life was devised by the mathematician John Horton Conway. It consist on a single grid of squares or cells
+            which can be in two states: dead or alive.
+        </p>
+        <p>The game have two simple rules which determine the evolution of the game:</p>
+        <ul>
+            <li>Every live cell dies unless it have 2 or 3 live neighbors</li>
+            <li>Every dead cell becomes alive if it haves exactly 3 live neighbors</li>
+        </ul>
+        <p>
+            For more information you can visit <a class="wikilink" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">the wikipedia article of this topic</a>.
+        </p>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
