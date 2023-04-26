@@ -1,29 +1,21 @@
-.Square{
-    border: 1px solid #b4b4b4;
-    width: 30px;
-    height: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.Row{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.On{
-    color: cadetblue;
-    background-color: cadetblue;
-}
-
 html{
     max-width: 1200px;
     margin: 0 auto;
     scroll-behavior: smooth;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    margin: 0 auto;
+}
+#canvas-grid{
+    width: 80vw;
+    height: 75vh;
+}
+section#canvas-grid{
+    display: grid;
+    place-items: center;
 }
 
 h1{
@@ -68,7 +60,7 @@ button:active{
     color: lightblue;
 }
 
-section{
+section#explanation{
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
@@ -91,3 +83,4 @@ a{
 .wikilink{
     color:rgb(142, 196, 196)
 }
+

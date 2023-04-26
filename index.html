@@ -13,12 +13,13 @@
     <button id="Play">Play</button>
     <button id="random-button">Generate Random Grid</button>
     <button id='exp-button' onclick="location.href='#info'">Explanation</button>
-    <div id="grid"></div>
 
-    <section id="canvas-grid"></section>
+    <section id="canvas-grid">
+        <canvas></canvas>
+    </section>
 
     <hr>
-    <section>
+    <section id="explanation">
         <h2 id="info">Game Explanation</h2>
         <p>The Game Of Life was devised by the mathematician John Horton Conway. It consist on a single grid of squares or cells
             which can be in two states: dead or alive.
@@ -32,6 +33,10 @@
             For more information you can visit <a class="wikilink" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">the wikipedia article of this topic</a>.
         </p>
     </section>
+    <script src="./src/game.js"></script>
+    <script src="./src/grid.js"></script>
+    <script src="./src/display.js"></script>
+
     <script src="./script.js"></script>
 </body>
 </html>
