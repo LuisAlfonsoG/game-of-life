@@ -6,7 +6,6 @@ class Display{
     this.color = color;
 
     this.drawCurrentState = this.drawCurrentState.bind(this);
-    //this.drawCurrentState();
   }
 
   drawCurrentState(grid){
