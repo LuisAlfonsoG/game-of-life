@@ -9,23 +9,29 @@ html{
 section{
     margin: 0 auto;
 }
+
 #canvas-grid{
     width: 80vw;
     height: 75vh;
 }
+
 section#canvas-grid{
     display: grid;
     place-items: center;
 }
 
 h1{
-    font-size: 4rem;
     margin: 0;
+    font-size: 4rem;
 }
 
-h2{
-    font-size: 3rem;
+h2{ font-size: 3rem; }
+
+hr{
+    margin: 4rem auto; 
 }
+
+
 p{
     font-size: 1.5rem;
 }
@@ -42,7 +48,7 @@ button{
 }
 
 button:active{
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 .nav-bar ul{
@@ -62,7 +68,7 @@ button:active{
 
 section#explanation{
     max-width: 900px;
-    margin: 0 auto;
+    margin: 4rem auto;
     text-align: left;
 }
 
@@ -84,3 +90,15 @@ a{
     color:rgb(142, 196, 196)
 }
 
+@media (max-width: 900px){
+    #canvas-grid{
+        width: 95vw;
+    }
+
+    button{
+        margin: 1rem 0.3rem;
+    }
+
+    h1{ font-size: 2rem;}
+    h2{ font-size: 1.8rem; }
+}

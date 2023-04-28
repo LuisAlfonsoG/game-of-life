@@ -11,7 +11,7 @@ class Controller{
     this.display = display;
     this.grid = grid;
     this.game = new Game();
-    this.interval = 1000;
+    this.interval = 300;
     this.animationId;
 
     this.display.canvas.onpointerdown = (e) => this.changeGridState(e);
@@ -20,12 +20,12 @@ class Controller{
   
 
     this.runGame = this.runGame.bind(this);
+    this.stop = this.stop.bind(this);
   }
 
   changeGridState(event){
 
-    cancelAnimationFrame(this.animationId);
-    this.playButton.innerText = "Play";
+    this.stop();
     
     let pos = getGridCoordinates(
       this.display.canvas,
@@ -80,14 +80,16 @@ class Controller{
   start(){
     this.playButton.innerText = "Stop";
     
-    this.playButton.onclick = () => {
-      cancelAnimationFrame(this.animationId);
-      this.playButton.innerText = "Play";
-      this.playButton.onclick = () =>  this.start();
-    }
+    this.playButton.onclick = () => this.stop();
     
     this.runGame();
     
+  }
+
+  stop(){
+    cancelAnimationFrame(this.animationId);
+    this.playButton.innerText = "Play";
+    this.playButton.onclick = () =>  this.start();
   }
 
   runGame(){

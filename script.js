@@ -20,14 +20,3 @@ let grid = Grid.createNewGrid(ROWS, COLUMNS);
 let controller = new Controller(play, randomButton, display, grid);
 
 display.drawCurrentState(grid);
-
-let game = new Game();
-/*
-grid.grid[5][5] = 1;
-grid.grid[6][5] = 1;
-grid.grid[7][5] = 1;
-
-setInterval(() => {
-    grid = grid.update(game);
-    display.drawCurrentState(grid);
-}, 1000)*/
