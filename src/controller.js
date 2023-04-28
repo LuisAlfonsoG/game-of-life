@@ -37,6 +37,7 @@ class Controller{
       this.grid.cellIsAlive(pos.y, pos.x) ? 0 : 1; 
 
     let move = (moveEvent) => {
+      moveEvent.preventDefault();
       let newPos = getGridCoordinates(
         this.display.canvas, 
         {x: moveEvent.clientX, y: moveEvent.clientY}, 
