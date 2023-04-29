@@ -15,9 +15,11 @@ class Controller{
     this.animationId;
 
     this.display.canvas.onpointerdown = (e) => this.changeGridState(e);
+    this.display.canvas.addEventListener("touchmove", e => e.preventDefault());
     this.randomGridButton.onclick = () => this.generateRandomGrid();
     this.playButton.onclick = () => this.start();
-  
+    
+
 
     this.runGame = this.runGame.bind(this);
     this.stop = this.stop.bind(this);
